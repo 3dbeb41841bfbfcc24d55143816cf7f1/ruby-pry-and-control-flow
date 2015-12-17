@@ -5,6 +5,9 @@ duration: 1.25
 creator:
     name: Micah Rich
     city: LA
+edited:
+    name: Marc Wright
+    city: ATL
 competencies: Programming
 ---
 
