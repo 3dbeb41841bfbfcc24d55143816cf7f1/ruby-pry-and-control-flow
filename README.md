@@ -221,9 +221,28 @@ awesome = 'this donut' unless awesome
 
 ```ruby
 #To install from the command line
-
 gem install pry
+
+#Instead of using `irb` we can use `pry`
 pry
+```
+
+### DDD - Code Along (10 min)
+
+Let's take a look at a simple example. Create a `pry.rb` file and add the following code:
+
+```ruby
+my_favorite_animal = "Alligator"
+puts my_favorite_animel
+```
+From the terminal, `cd` into the folder containing the file. Enter the `pry` shell and run `load pry.rb`. We should get an error like `undefined local variable or method `my_favorite_animel'`.
+
+Let's insert a `binding.pry` to freeze the code at a particular point in time and check out what's actually going on.
+
+```ruby
+my_favorite_animal = "Alligator"
+puts my_favorite_animel
+binding.pry
 ```
 
 ## Conclusion (5 mins)
