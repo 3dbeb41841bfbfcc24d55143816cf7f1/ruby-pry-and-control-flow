@@ -18,6 +18,7 @@ competencies: Programming
 - Demonstrate using conditionals to run methods
 - Differentiate between true, false, truthy, and falsey
 - Use boolean logic to combine and manipulate conditionals
+- Use Pry for debugging
 
 ### Preparation
 
@@ -211,6 +212,18 @@ awesome ||= 'this donut'
 
 # same as writing something like
 awesome = 'this donut' unless awesome
+```
+
+### Pry and Debugging
+[Pry](http://pryrepl.org/) is a powerful alternative to the standard IRB shell for Ruby. It features syntax highlighting, a flexible plugin architecture, runtime invocation and source and documentation browsing. We're gonna use it for DDD (Debugging Driven Development).
+
+(Class) What are some examples of when and how you've debugged your code?
+
+```ruby
+#To install from the command line
+
+gem install pry
+pry
 ```
 
 ## Conclusion (5 mins)
