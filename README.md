@@ -235,7 +235,7 @@ Let's take a look at a simple example. Create a `pry.rb` file and add the follow
 my_favorite_animal = "Alligator"
 puts my_favorite_animel
 ```
-From the terminal, `cd` into the folder containing the file. Enter the `pry` shell and run `load pry.rb`. We should get an error like `undefined local variable or method `my_favorite_animel'`.
+From the terminal, `cd` into the folder containing the file and run `pry pry.rb`. We should get an error like `undefined local variable or method 'my_favorite_animel'`.
 
 Let's insert a `binding.pry` to freeze the code at a particular point in time and check out what's actually going on.
 
@@ -244,6 +244,8 @@ my_favorite_animal = "Alligator"
 puts my_favorite_animel
 binding.pry
 ```
+
+We can now freeze the code and have access to all the code that's run before to help with debugging.
 
 ## Conclusion (5 mins)
 - Describe the difference between truthy & true.
